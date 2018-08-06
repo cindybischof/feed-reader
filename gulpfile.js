@@ -22,4 +22,4 @@ var browserSync = require('browser-sync').create();
  browserSync.init({
      server: "./"
  });
- browserSync.stream();
+ browserSync.stream();        
