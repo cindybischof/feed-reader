@@ -48,7 +48,6 @@ $(function() {
              expect(feedName.name.length).not.toBe(0);
            }
          });
-
     });
 
 
@@ -59,14 +58,19 @@ $(function() {
            expect($('body').hasClass('menu-hidden')).toBe(true);
          });
 
-         /* TODO: Write a test that ensures the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
+         /* Next 2 tests ensure the menu changes visibility when
+          * the menuicon is clicked. First test checks that the menu
+          * displays when clicked. Second test checks that the mneu
+          * hides when clicked again.
           */
-          it('visibility toggles upon click', function(){
+          it('display on click', function(){
             $('.menu-icon-link').click();
             expect($('body').hasClass('menu-hidden')).toBe(false);
+          });
+
+          it('hide on click', function(){
+            $('.menu-icon-link').click();
+            expect($('body').hasClass('menu-hidden')).toBe(true);
           });
       });
 
@@ -80,7 +84,7 @@ $(function() {
          */
     });
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
+    // Fourt test suite focused on New Feed Selection
     describe('New Feed Selection', function(){
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
