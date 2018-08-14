@@ -1,15 +1,15 @@
 /* feedreader.js
  *
  * This is the spec file that Jasmine will read and contains
- * all of the tests that will be run against your application.
+ * all of the tests that will be run against the application.
  */
 
-/* We're placing all of our tests within the $() function,
- * since some of these tests may require DOM elements. We want
- * to ensure they don't run until the DOM is ready.
+/* All tests are contained within the $() function,
+ * since some of these tests may require DOM elements. This
+ * ensures these tests won't run until the DOM is ready.
  */
 $(function() {
-    /* This is our first test suite - a test suite just contains
+    /* First test suite - a test suite just contains
     * a related set of tests. This suite is all about the RSS
     * feeds definitions, the allFeeds variable in our application.
     */
@@ -52,10 +52,9 @@ $(function() {
     });
 
 
-    /* TODO: Write a new test suite named "The menu" */
+    //Second test suite focused on the menu
     describe('The Menu', function(){
         // Test ensures the menu element is hidden by default
-
          it('hidden by default', function(){
            expect($('body').hasClass('menu-hidden')).toBe(true);
          });
