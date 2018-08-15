@@ -43,9 +43,9 @@ $(function() {
          * and that the name is not empty.
          */
          it('name defined', function() {
-           for(let feedName of allFeeds) {
-             expect(feedName.name).toBeDefined();
-             expect(feedName.name.length).not.toBe(0);
+           for(let feed of allFeeds) {
+             expect(feed.name).toBeDefined();
+             expect(feed.name.length).not.toBe(0);
            }
          });
     });
@@ -91,11 +91,12 @@ $(function() {
          });
     });
 
-    // Fourt test suite focused on New Feed Selection
+    // Fourth test suite focused on New Feed Selection
     describe('New Feed Selection', function(){
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+
     });
 }());
