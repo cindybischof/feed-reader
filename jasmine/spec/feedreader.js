@@ -75,7 +75,7 @@ $(function() {
       });
 
     //Third test suite focused on initial entries
-    describe('initial entries', function(){
+    describe('Initial Entries', function(){
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
@@ -85,10 +85,13 @@ $(function() {
          beforeEach(function(done){
            loadFeed(0);
            done();
+           done();
          });
 
-         it('feed container not empty', function(){
-           expect($('.feed').length > 0).toBe(true);
+         it('feed container not empty', function(done){
+           expect($('.feed')).not.toBe('',"",null);
+           done();
+           done();
          });
     });
 
