@@ -58,7 +58,7 @@ $(function() {
            expect($('body').hasClass('menu-hidden')).toBe(true);
          });
 
-         /* Next 2 tests ensure the menu changes visibility when
+         /* Next two tests ensure the menu changes visibility when
           * the menuicon is clicked. First test checks that the menu
           * displays when clicked. Second test checks that the mneu
           * hides when clicked again.
@@ -76,10 +76,10 @@ $(function() {
 
     //Third test suite focused on initial entries
     describe('Initial Entries', function(){
-        /* TODO: Write a test that ensures when the loadFeed
-         * function is called and completes its work, there is at least
-         * a single .entry element within the .feed container.
-         * Remember, loadFeed() is asynchronous so this test will require
+        /* Test ensures when the loadFeed function is called and
+         * completes its work, there is at least a single .entry
+         * element within the .feed container.
+         * Note: loadFeed() is asynchronous so this test requires
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
          beforeEach(function(done){
@@ -97,9 +97,9 @@ $(function() {
 
     // Fourth test suite focused on New Feed Selection
     describe('New Feed Selection', function(){
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
+        /* Test ensures that when a new feed is loaded by the
+         * loadFeed function that the content actually changes.
+         * Note: loadFeed() is asynchronous.
          */
 
     });
