@@ -3,9 +3,9 @@
 
 ## Table of Contents
 
-* [Project Overview] (#project)
-* [What I learned] (#what)
-* [Jasmine Documentation] (#jasmine)
+* [Project Overview](#project)
+* [What I learned](#what)
+* [Jasmine Documentation](#jasmine)
 
 ## Project Overview
 
