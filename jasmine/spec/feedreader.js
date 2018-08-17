@@ -97,7 +97,9 @@ $(function() {
     // Fourth test suite focused on New Feed Selection
     /* Test ensures that when a new feed is loaded by the
     * loadFeed function that the content actually changes.
-    * Note: loadFeed() is asynchronous.*/
+    * Note: loadFeed() is asynchronous. Loads two separate
+    * feeds and saves the inner text from the first h1
+    * header title from each feed and then compares the two.*/
     describe('New Feed Selection', function(){
         let feedOne;
         let feedTwo;
