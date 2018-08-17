@@ -13,6 +13,7 @@ $(function() {
     * a related set of tests. This suite is all about the RSS
     * feeds definitions, the allFeeds variable in our application.
     */
+
     describe('RSS Feeds', function() {
         /* This is our first test - it tests to make sure that the
          * allFeeds variable has been defined and that it is not
@@ -85,22 +86,33 @@ $(function() {
          beforeEach(function(done){
            loadFeed(0);
            done();
-           done();
          });
 
          it('feed container not empty', function(done){
            expect($('.feed')).not.toBe('',"",null);
            done();
-           done();
          });
     });
 
     // Fourth test suite focused on New Feed Selection
+    /* Test ensures that when a new feed is loaded by the
+    * loadFeed function that the content actually changes.
+    * Note: loadFeed() is asynchronous.*/
     describe('New Feed Selection', function(){
-        /* Test ensures that when a new feed is loaded by the
-         * loadFeed function that the content actually changes.
-         * Note: loadFeed() is asynchronous.
-         */
+        let feedOne;
+        let feedTwo;
+        beforeEach(function(done){
+            loadFeed(0,function(){
+            feedOne = $('h1.header-title')[0].innerText;
 
+            loadFeed(1, function(){
+            feedTwo = $('h1.header-title')[0].innerText;
+            done();
+            });
+          });
+        });
+        it('content changes upon feed load', function(){
+          expect(feedOne).not.toEqual(feedTwo);
+       });
     });
 }());
