@@ -5,7 +5,7 @@
 
 * [Project Overview](#project)
 * [What I learned](#what)
-* [Jasmine Documentation](#jasmine)
+* [Jasmine Documentation](#Jasmine Documentation)
 
 ## Project Overview
 
